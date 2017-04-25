@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    #box{
+      width: 100px;
+      height: 100px;
+      background-color: yellowgreen;
+    }
+    #box:after{
+      content: '';
+      display: block;
+      float: right;
+      margin-top: 50%;
+      transform: translateY(-50%);
+    }
+    #box:hover{
+      background-color: orangered;
+    }
+    #box:hover:after{
+      border: 10px solid transparent;
+      border-right-color: #fff;
+    }
+  </style>
+</head>
+<body>
+<div id="box">
+  
+</div>
+</body>
+</html>

@@ -1,0 +1,396 @@
+a{
+  color: #000;
+  font-weight: bold;
+}
+i{
+  font-style: normal;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.clear:after, .clear:before{
+  content: '';
+  display: table;
+  clear: both;
+}
+.clear{
+  zoom: 1;
+}
+.btn{
+  display: inline-block;
+  height: 24px;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 0 10px;
+  border-radius:5px;
+}
+.btn-danger{
+  background-color: #e94840;
+  color: #fff;
+}
+.header_nav{
+  padding: 10px 0 15px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  background-color: rgba(255,255,255,.95);
+  transition: .5s;
+  transform-origin: top;
+  z-index: 99;
+  top:0;
+  left: 0;
+  right: 0;
+}
+
+/*翻着动画*/
+.show{
+  box-shadow: 0px 0px 5px 0px #888;
+  position: fixed;
+  animation: trunback 1s;
+}
+@keyframes trunback {
+  from {
+    transform: rotateX(90deg);
+  }
+  to{
+    transform: rotateX(0deg);
+  }
+}
+
+.logo{
+  float: left;
+}
+.header_nav .nav_list{
+  float: right;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header_nav span{
+  font-weight: bold;
+  color: #000;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+}
+.nav_item a{
+  display: inline-block;
+  padding: 2px 0px;
+  height: 22px;
+  line-height: 22px;
+}
+.header_nav .nav_list .nav_item{
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+}
+#position{
+  height: 42px;
+  margin-right: 50px;
+}
+#position .show-city{
+  color: #888;
+}
+#login{
+  background-color: #e94840;
+  border-radius: 6px;
+  padding: 2px 6px;
+  color: #fff;
+}
+
+/*banner*/
+.d_banner{
+  /*margin-top: 67px;*/
+  position: relative;
+}
+.carousel-wrap{
+  position: absolute;
+  height: 420px;
+  width: 100%;
+  z-index: 0;
+}
+.d_banner .carousel-wrap .carousel{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.d_banner .carousel-wrap .carousel{
+  height: 420px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.d_banner .carousel-wrap .point-wrap{
+  position: absolute;
+  z-index: 22;
+  bottom: 20px;
+  height: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.d_banner .carousel-wrap .point-wrap a{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.d_banner .carousel-wrap .carousel .carousel-item{
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 420px;
+  width: 100%;
+  transition: 1s linear;
+}
+/*轮播图*/
+.carousel-item:nth-child(1){
+  background: url(http://www.daoway.cn/pcimages/banner1.jpg) no-repeat center center;
+}
+.carousel-item:nth-child(2){
+  background: url(http://www.daoway.cn/pcimages/banner2.jpg) no-repeat center center;
+}
+.carousel-item:nth-child(3){
+  background: url(http://www.daoway.cn/pcimages/banner3.jpg) no-repeat center center;
+}
+
+
+
+/*banner nav*/
+
+.banner-nav{
+  margin: 0 20px;
+  width: 180px;
+  background: #757881;
+  color: #fff;
+  position: relative;
+}
+.banner-nav .nav-name{
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding-left: 45px;
+}
+
+
+.banner-nav .nav-name a{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+/* 导航栏小三角*/
+.banner-nav .nav-name a:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border: 6px solid transparent;
+  transform: translateY(-50%);
+}
+.banner-nav .nav-name:hover a:after{
+  border-right-color: #fff;
+}
+
+
+.nav-name a i{
+  margin-right: 15px;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  width: 70px;
+  text-align: justify;
+  text-align-last: justify;
+}
+.nav-name:hover{
+  background-color: rgb(96,100,109);
+}
+.nav-name:hover img{
+  display: none;
+}
+.banner-nav .nav-name:hover .nav-list{
+  display: block;
+}
+.nav-name .nav-list{
+  position: absolute;
+  top: 0;
+  display: none;
+  background-color: rgba(255,255,255,0.7);
+  height: 100%;
+  width: 160px;
+  left: 180px;
+}
+.nav-name .nav-list li{
+  height: 42px;
+  line-height: 42px;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  padding-left: 45px;
+}
+.nav-name .nav-list a:hover{
+  color: #e94840;
+}
+/*卡片*/
+
+.card-wrap{
+  padding: 60px 0;
+}
+.white{
+  background-color: #fff;
+}
+.gray{
+  background-color: rgb(251, 248, 248);
+}
+.card-head{
+  text-align: center;
+  font-size: 22px;
+}
+.card-head h2{
+  color: #3d3838;
+  font-weight: 800;
+  font-size: 28px;
+  font-family: "Microsoft YaHei";
+}
+.card-head p{
+  font-size: 22px;
+  color: #3d3838;
+  margin-top: 15px;
+}
+.card-head .more{
+  margin-top: -13px;
+  text-align: right;
+}
+.card-head .more a{
+  color: #898989;
+  font-weight: 400;
+  font-size: 18px;
+}
+.card-content{
+  margin-top: 25px;
+}
+.card-content .card{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 230px;
+  border: 1px solid #eaeaea;
+  margin: 0 2px;
+  background: #fff;
+  cursor: pointer;
+  height: 345px;
+}
+.card-content .card:hover{
+  box-shadow: 5px 5px 15px 0 #ccc;
+}
+.card-content img{
+  width: 100%;
+}
+.card-content .serviceName{
+  font-size: 16px;
+  padding: 10px 0 0;
+  font-weight: 700;
+  height: 28px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card-content .description{
+  color: #929292;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  font-size: 13px;
+  line-height: 18px;
+  /*margin-bottom: 15px;*/
+}
+.card-content .price{
+  color: #e94840;
+  padding: 0 5px;
+  line-height: 24px;
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.card-content .price span>span{
+  font-size: 20px;
+}
+
+/*footer*/
+
+.d_footer{
+
+}
+.d_footer .baozhang{
+  margin-top: 60px;
+  text-align: center;
+}
+.baozhang h2 {
+  font-size: 28px;
+  font-weight: 800;
+}
+.baozhang h2 i{
+  font-size: 28px;
+  font-weight: 800;
+  color: #e94840;
+}
+.baozhang p{
+  margin-top: 10px;
+}
+.baozhang .ticket-wrap{
+  margin-top: 68px;
+  text-align: center;
+}
+.baozhang .ticket-wrap .ticket{
+  width: 280px;
+  display: inline-block;
+}
+.d_footer{
+  text-align: center;
+}
+.d_footer .cities{
+  padding: 50px 40px 15px;
+}
+.d_footer .cities .city-list{
+}
+.city-list dt{
+  float: left;
+  width: 100px;
+  font: bold 13px/1.4 'Microsoft YaHei';
+}
+.city-list dd{
+  width: 1100px;
+  float: right;
+}
+.city-list ul{
+  overflow: hidden;
+}
+.city-list ul li{
+  float: left;
+  height: 30px;
+  text-align: center;
+  width: 100px;
+}
+.city-list li a{
+  font: 200 16px 'Microsoft YaHei';
+  font-size: 16px;
+  color: #898989;
+  text-align: center;
+}
+.d_footer .beian{
+  padding: 40px 0 20px;
+}
+.d_footer .beian p{
+  color: #898989;
+  font: 200 15px/30px 'Microsoft YaHei';
+}

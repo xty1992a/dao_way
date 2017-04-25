@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body{
+      height: 1000px;
+      transform-style: preserve-3d;
+    }
+    .head{
+      height: 150px;
+      width: 150px;
+      background-color: yellowgreen;
+      transform-origin: top;
+      transition: .5s;
+    }
+    .hide{
+    }
+    .show{
+      animation: trunback 1s;
+    }
+
+    @keyframes trunback {
+      from {
+        transform: rotateX(90deg);
+      }
+      to{
+        transform: rotateX(0deg);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="head hide"></div>
+
+<script type="text/javascript" src="../static/js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+  $(window).click(function () {
+    $('.head').addClass('show')
+  })
+
+</script>
+</body>
+</html>

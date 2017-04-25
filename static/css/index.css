@@ -1,0 +1,244 @@
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.btn{
+  display: inline-block;
+  height: 24px;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 0 10px;
+  border-radius:5px;
+}
+.btn-danger{
+  background-color: #e94840;
+  color: #fff;
+}
+
+.header_nav{
+  padding: 10px 0 15px;
+  overflow: hidden;
+  background-color: rgba(255,255,255,.95);
+  box-shadow: 0px 0px 5px 0px #888;
+  position: fixed;
+  z-index: 99;
+  top:0;
+  left: 0;
+  right: 0;
+}
+.logo{
+  float: left;
+}
+.header_nav .nav_list{
+  float: right;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: bold;
+}
+a{
+  color: #000;
+  font-weight: bold;
+
+}
+.header_nav span{
+  font-weight: bold;
+  color: #000;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+}
+.nav_item a{
+  display: inline-block;
+  padding: 2px 0px;
+  height: 22px;
+  line-height: 22px;
+  /*vertical-align: middle;*/
+}
+.header_nav .nav_list .nav_item{
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+}
+#position{
+  height: 42px;
+  margin-right: 50px;
+}
+#position .show-city{
+  color: #888;
+}
+#login{
+  background-color: #e94840;
+  border-radius: 6px;
+  padding: 2px 6px;
+  color: #fff;
+}
+
+/*banner*/
+.d_banner{
+  margin-top: 67px;
+}
+.carousel-wrap{
+  position: relative;
+  width: 100%;
+}
+.d_banner .carousel-wrap .carousel{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.banner-nav{
+  padding: 0 20px;
+  width: 180px;
+  background: #757881;
+  color: #fff;
+  position: relative;
+}
+
+.d_banner .carousel-wrap .carousel .carousel-item{
+  z-index: -1;
+  position: absolute;
+  height: 420px;
+  width: 100%;
+}
+.carousel-item:nth-child(1){
+  background: url(http://www.daoway.cn/pcimages/banner3.jpg) no-repeat center center;
+}
+.carousel-item:nth-child(2){
+  background: url(http://www.daoway.cn/pcimages/banner3.jpg) no-repeat center center;
+}
+.carousel-item:nth-child(3){
+  background: url(http://www.daoway.cn/pcimages/banner3.jpg) no-repeat center center;
+}
+
+.banner-nav .nav-name{
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  font-size: 16px;
+  /*position: relative;*/
+  font-weight: bold;
+  cursor: pointer;
+  padding-left: 45px;
+}
+.banner-nav .nav-name a{
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+.nav-name a i{
+  margin-right: 15px;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  width: 70px;
+  font-style: normal;
+  text-align: justify;
+  text-align-last: justify;
+}
+.nav-name .nav-list{
+  position: absolute;
+  top: 0;
+  display: none;
+  background-color: rgba(255,255,255,0.7);
+  width: 160px;
+  left: 180px;
+}
+.nav-name .nav-list li{
+  height: 42px;
+  line-height: 42px;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  padding-left: 45px;
+}
+
+/*卡片*/
+
+.card-wrap{
+  padding: 60px 0;
+}
+.white{
+  background-color: #fff;
+}
+.gray{
+  background-color: rgb(251,248,248);
+}
+.card-head{
+  text-align: center;
+  font-size: 22px;
+}
+.card-head h2{
+  color: #3d3838;
+  font-weight: 800;
+  font-size: 28px;
+  font-family: "Microsoft YaHei";
+}
+.card-head p{
+  font-size: 22px;
+  color: #3d3838;
+  margin-top: 15px;
+}
+.card-head .more{
+  margin-top: -13px;
+  text-align: right;
+}
+.card-head .more a{
+  color: #898989;
+  font-weight: 400;
+  font-size: 18px;
+}
+.card-content{
+  /*overflow: hidden;*/
+  margin-top: 25px;
+}
+.card-content .card{
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 230px;
+  border: 1px solid #eaeaea;
+  margin: 0 2px;
+  background: #fff;
+  cursor: pointer;
+  height: 345px;
+}
+.card-content .card:hover{
+  box-shadow: 5px 5px 15px 0 #ccc;
+}
+.card-content img{
+  width: 100%;
+}
+.card-content .serviceName{
+  font-size: 16px;
+  padding: 10px 0 0;
+  font-weight: 700;
+  height: 28px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card-content .description{
+  color: #929292;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  font-size: 13px;
+  line-height: 18px;
+  /*margin-bottom: 15px;*/
+}
+.card-content .price{
+  color: #e94840;
+  padding: 0 5px;
+  line-height: 24px;
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.card-content .price span>span{
+  font-size: 20px;
+}
