@@ -540,7 +540,7 @@
 <script type="text/javascript">
   $(function () {
     var timer = carousel()
-
+    trunback()
     $('.point-wrap').on('click', 'a', function () {
       changeImg($(this).index())
     })
@@ -577,13 +577,15 @@
       $($carousels[num]).css({'opacity': 1})
     }
 
-    $(window).scroll(function (ev) {
-      if($('body').scrollTop()>70){
-        $('.header_nav').addClass('show')
-      } else if($('body').scrollTop()<100){
-        $('.header_nav').removeClass('show')
-      }
-    })
+    function trunback() {
+      $(window).scroll(function (ev) {
+        if($('body').scrollTop()>70){
+          $('.header_nav').addClass('show')
+        } else if($('body').scrollTop()<100){
+          $('.header_nav').removeClass('show')
+        }
+      })
+    }
 
   })
 </script>

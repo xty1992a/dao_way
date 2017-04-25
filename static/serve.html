@@ -3,8 +3,434 @@
 <head>
   <meta charset="UTF-8">
   <title>serve</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/serve.css">
 </head>
 <body>
+<header class="s_header">
+  <div class="header_nav">
+    <div class="container">
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="nav_list">
+        <li id="position" class="nav_item" class="positon">
+          <a href="#">
+            <img src="img/citypoint.png" alt="">
+            <span class="city">北京</span>
+            <span class="show-city">切换城市</span>
+          </a>
+        </li>
+        <li class="nav_item"><a href="#">首页</a></li>
+        <li class="nav_item"><a href="#">下载APP</a></li>
+        <li class="nav_item"><a href="#">服务商</a></li>
+        <li class="nav_item"><a href="#">商家入驻</a></li>
+        <li class="nav_item"><a href="#">关于我们</a></li>
+        <li class="nav_item">
+          <a id="login" href="#">商家登录</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
 
+
+<div class="s_nav">
+  <div class="container">
+    <div class="nav_title clear">
+      <div class="title">
+        所有分类
+        <i>&gt;</i>
+        <i class="now">家庭保洁</i>
+        <i>&gt;</i>
+      </div>
+    </div>
+    <div class="nav_wrap">
+      <ul class="nav_list clear">
+        <li class="nav_item">分类</li>
+        <li class="nav_item"><a href="#">全部</a></li>
+        <li class="nav_item"><a class="red" href="#">小时工</a></li>
+        <li class="nav_item"><a href="#">开荒</a></li>
+        <li class="nav_item"><a href="#">保洁</a></li>
+        <li class="nav_item"><a href="#">擦玻璃</a></li>
+        <li class="nav_item"><a href="#">深度保洁</a></li>
+        <li class="nav_item"><a href="#">家居养护</a></li>
+        <li class="nav_item"><a href="#">空气净化</a></li>
+        <li class="nav_item"><a href="#">杀虫灭鼠</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="s_content">
+  <div class="container clear">
+    <div class="s-left">
+      <div class="select clear">
+        <div class="paging">
+          <i id="page" class="cout">1</i>/<i id="pages">11</i>
+          <i class="page">上一页</i>
+          <i class="page click-able">下一页</i>
+        </div>
+        <div class="arrange">
+          <ul class="arrange-list">
+            <li><a class="active" href="#">推荐排序</a></li>
+            <li><a href="#">销量高<img src="img/fuwu_down2.jpg" alt=""></a></li>
+            <li><a href="#">好评多<img src="img/fuwu_down2.jpg" alt=""></a></li>
+            <li><a href="#">上门快<img src="img/fuwu_down2.jpg" alt=""></a></li>
+            <li><a href="#">价格低<img src="img/fuwu_down2.jpg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="serve-tab-wrap">
+        <div class="serve-tab clear">
+          <img src="img/card/1.jpg" alt="">
+          <div class="s-describe">
+            <h4>家庭保洁</h4>
+             <p style="color: #929292">服务内容：家庭保洁服务，2小时起订。（暂时不提供带保洁工具...</p>
+            <p>
+              <span class="nowPic">30<i>元/小时</i></span>
+              <span class="oldPic"><i>40元</i></span>
+            </p>
+            <p class="seller">
+              <span>
+                <img src="http://www.daoway.cn/pcimages/home1.png" width="18" height="17">
+                宝宝天天乐
+              </span>
+              <span>已售<i>50</i></span>
+              <span>好评<i>100%</i></span>
+            </p>
+          </div>
+        </div>
+        <div class="serve-tab clear">
+          <img src="img/card/1.jpg" alt="">
+          <div class="s-describe">
+            <h4>家庭保洁</h4>
+            <p style="color: #929292">服务内容：家庭保洁服务，2小时起订。（暂时不提供带保洁工具...</p>
+            <p>
+              <span class="nowPic">30<i>元/小时</i></span>
+              <span class="oldPic"><i>40元</i></span>
+            </p>
+            <p class="seller">
+              <span>
+                <img src="http://www.daoway.cn/pcimages/home1.png" width="18" height="17">
+                宝宝天天乐
+              </span>
+              <span>已售<i>50</i></span>
+              <span>好评<i>100%</i></span>
+            </p>
+          </div>
+        </div>
+        <div class="serve-tab clear">
+          <img src="img/card/1.jpg" alt="">
+          <div class="s-describe">
+            <h4>家庭保洁</h4>
+            <p style="color: #929292">服务内容：家庭保洁服务，2小时起订。（暂时不提供带保洁工具...</p>
+            <p>
+              <span class="nowPic">30<i>元/小时</i></span>
+              <span class="oldPic"><i>40元</i></span>
+            </p>
+            <p class="seller">
+              <span>
+                <img src="http://www.daoway.cn/pcimages/home1.png" width="18" height="17">
+                宝宝天天乐
+              </span>
+              <span>已售<i>50</i></span>
+              <span>好评<i>100%</i></span>
+            </p>
+          </div>
+        </div>
+        <div class="serve-tab clear">
+          <img src="img/card/1.jpg" alt="">
+          <div class="s-describe">
+            <h4>家庭保洁</h4>
+            <p style="color: #929292">服务内容：家庭保洁服务，2小时起订。（暂时不提供带保洁工具...</p>
+            <p>
+              <span class="nowPic">30<i>元/小时</i></span>
+              <span class="oldPic"><i>40元</i></span>
+            </p>
+            <p class="seller">
+              <span>
+                <img src="http://www.daoway.cn/pcimages/home1.png" width="18" height="17">
+                宝宝天天乐
+              </span>
+              <span>已售<i>50</i></span>
+              <span>好评<i>100%</i></span>
+            </p>
+          </div>
+        </div>
+        <div class="serve-tab clear">
+          <img src="img/card/1.jpg" alt="">
+          <div class="s-describe">
+            <h4>家庭保洁</h4>
+            <p style="color: #929292">服务内容：家庭保洁服务，2小时起订。（暂时不提供带保洁工具...</p>
+            <p>
+              <span class="nowPic">30<i>元/小时</i></span>
+              <span class="oldPic"><i>40元</i></span>
+            </p>
+            <p class="seller">
+              <span>
+                <img src="http://www.daoway.cn/pcimages/home1.png" width="18" height="17">
+                宝宝天天乐
+              </span>
+              <span>已售<i>50</i></span>
+              <span>好评<i>100%</i></span>
+            </p>
+          </div>
+        </div>
+        <div class="serve-tab clear">
+          <img src="img/card/1.jpg" alt="">
+          <div class="s-describe">
+            <h4>家庭保洁</h4>
+            <p style="color: #929292">服务内容：家庭保洁服务，2小时起订。（暂时不提供带保洁工具...</p>
+            <p>
+              <span class="nowPic">30<i>元/小时</i></span>
+              <span class="oldPic"><i>40元</i></span>
+            </p>
+            <p class="seller">
+              <span>
+                <img src="http://www.daoway.cn/pcimages/home1.png" width="18" height="17">
+                宝宝天天乐
+              </span>
+              <span>已售<i>50</i></span>
+              <span>好评<i>100%</i></span>
+            </p>
+          </div>
+        </div>
+        <div class="serve-tab clear">
+          <img src="img/card/1.jpg" alt="">
+          <div class="s-describe">
+            <h4>家庭保洁</h4>
+            <p style="color: #929292">服务内容：家庭保洁服务，2小时起订。（暂时不提供带保洁工具...</p>
+            <p>
+              <span class="nowPic">30<i>元/小时</i></span>
+              <span class="oldPic"><i>40元</i></span>
+            </p>
+            <p class="seller">
+              <span>
+                <img src="http://www.daoway.cn/pcimages/home1.png" width="18" height="17">
+                宝宝天天乐
+              </span>
+              <span>已售<i>50</i></span>
+              <span>好评<i>100%</i></span>
+            </p>
+          </div>
+        </div>
+        <div class="serve-tab clear">
+          <img src="img/card/1.jpg" alt="">
+          <div class="s-describe">
+            <h4>家庭保洁</h4>
+            <p style="color: #929292">服务内容：家庭保洁服务，2小时起订。（暂时不提供带保洁工具...</p>
+            <p>
+              <span class="nowPic">30<i>元/小时</i></span>
+              <span class="oldPic"><i>40元</i></span>
+            </p>
+            <p class="seller">
+              <span>
+                <img src="http://www.daoway.cn/pcimages/home1.png" width="18" height="17">
+                宝宝天天乐
+              </span>
+              <span>已售<i>50</i></span>
+              <span>好评<i>100%</i></span>
+            </p>
+          </div>
+        </div>
+        <div class="serve-tab clear">
+          <img src="img/card/1.jpg" alt="">
+          <div class="s-describe">
+            <h4>家庭保洁</h4>
+            <p style="color: #929292">服务内容：家庭保洁服务，2小时起订。（暂时不提供带保洁工具...</p>
+            <p>
+              <span class="nowPic">30<i>元/小时</i></span>
+              <span class="oldPic"><i>40元</i></span>
+            </p>
+            <p class="seller">
+              <span>
+                <img src="http://www.daoway.cn/pcimages/home1.png" width="18" height="17">
+                宝宝天天乐
+              </span>
+              <span>已售<i>50</i></span>
+              <span>好评<i>100%</i></span>
+            </p>
+          </div>
+        </div>
+        <div class="serve-tab clear">
+          <img src="img/card/1.jpg" alt="">
+          <div class="s-describe">
+            <h4>家庭保洁</h4>
+            <p style="color: #929292">服务内容：家庭保洁服务，2小时起订。（暂时不提供带保洁工具...</p>
+            <p>
+              <span class="nowPic">30<i>元/小时</i></span>
+              <span class="oldPic"><i>40元</i></span>
+            </p>
+            <p class="seller">
+              <span>
+                <img src="http://www.daoway.cn/pcimages/home1.png" width="18" height="17">
+                宝宝天天乐
+              </span>
+              <span>已售<i>50</i></span>
+              <span>好评<i>100%</i></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="paging">
+        <i class="page">&lt;上一页</i>
+        <i class="page">1</i>
+        <i class="page">2</i>
+        <i class="page">3</i>
+        <i class="page">4</i>
+        <i class="page">5</i>
+        <i class="page">6</i>
+        ...
+        <i class="page click-able">下一页&gt;</i>
+      </div>
+    </div>
+    <div class="s-right">
+      <h3>服务商</h3>
+      <div class="seller-item">
+        <img src="img/card/2.jpg" alt="">
+        <p>云家政</p>
+        <p>
+          <span>
+            已成功接单<i>22674</i>
+          </span>
+          <span>
+            好评<i>87</i>%
+          </span>
+        </p>
+      </div>
+      <div class="seller-item">
+        <img src="img/card/2.jpg" alt="">
+        <p>云家政</p>
+        <p>已成功接单<i>22674</i>好评<i>87</i>%</p>
+      </div>
+      <div class="seller-item">
+        <img src="img/card/2.jpg" alt="">
+        <p>云家政</p>
+        <p>已成功接单<i>22674</i>好评<i>87</i>%</p>
+      </div>
+      <div class="seller-item">
+        <img src="img/card/2.jpg" alt="">
+        <p>云家政</p>
+        <p>已成功接单<i>22674</i>好评<i>87</i>%</p>
+      </div>
+      <div class="seller-item">
+        <img src="img/card/2.jpg" alt="">
+        <p>云家政</p>
+        <p>已成功接单<i>22674</i>好评<i>87</i>%</p>
+      </div>
+      <div class="seller-item">
+        <img src="img/card/2.jpg" alt="">
+        <p>云家政</p>
+        <p>已成功接单<i>22674</i>好评<i>87</i>%</p>
+      </div>
+      <div class="seller-item">
+        <img src="img/card/2.jpg" alt="">
+        <p>云家政</p>
+        <p>已成功接单<i>22674</i>好评<i>87</i>%</p>
+      </div>
+      <div class="seller-item">
+        <img src="img/card/2.jpg" alt="">
+        <p>云家政</p>
+        <p>已成功接单<i>22674</i>好评<i>87</i>%</p>
+      </div>
+      <div class="seller-item">
+        <img src="img/card/2.jpg" alt="">
+        <p>云家政</p>
+        <p>已成功接单<i>22674</i>好评<i>87</i>%</p>
+      </div>
+      <div class="seller-item">
+        <img src="img/card/2.jpg" alt="">
+        <p>云家政</p>
+        <p>已成功接单<i>22674</i>好评<i>87</i>%</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="d_footer">
+  <div class="baozhang" id="baozhang">
+    <h2>到位<i>服务</i>保障</h2>
+    <p>到位平台担保交易安全，交易未成功100%退款</p>
+    <div class="ticket-wrap">
+      <div class="ticket">
+        <img src="img/quan.png" alt="">
+        <p>服务好</p>
+      </div>
+      <div class="ticket">
+        <img src="img/quan.png" alt="">
+        <p>上门快</p>
+      </div>
+      <div class="ticket">
+        <img src="img/quan.png" alt="">
+        <p>有保障</p>
+      </div>
+    </div>
+  </div>
+  <div class="cities">
+    <dl class="city-list clear">
+      <dt>热门城市</dt>
+      <dd>
+        <ul class="clear">
+          <li><a href="#">北京</a></li>
+          <li><a href="#">北京</a></li>
+          <li><a href="#">北京</a></li>
+          <li><a href="#">北京</a></li>
+          <li><a href="#">武汉</a></li>
+          <li><a href="#">上海</a></li>
+          <li><a href="#">南京</a></li>
+          <li><a href="#">天津</a></li>
+          <li><a href="#">北京</a></li>
+          <li><a href="#">武汉</a></li>
+          <li><a href="#">上海</a></li>
+          <li><a href="#">南京</a></li>
+          <li><a href="#">天津</a></li>
+          <li><a href="#">北京</a></li>
+          <li><a href="#">武汉</a></li>
+          <li><a href="#">上海</a></li>
+          <li><a href="#">南京</a></li>
+          <li><a href="#">天津</a></li>
+          <li><a href="#">北京</a></li>
+          <li><a href="#">武汉</a></li>
+          <li><a href="#">上海</a></li>
+          <li><a href="#">南京</a></li>
+          <li><a href="#">天津</a></li>
+          <li><a href="#">天津</a></li>
+          <li><a href="#">北京</a></li>
+          <li><a href="#">武汉</a></li>
+          <li><a href="#">上海</a></li>
+          <li><a href="#">南京</a></li>
+          <li><a href="#">天津</a></li>
+          <li><a href="#">北京</a></li>
+          <li><a href="#">武汉</a></li>
+          <li><a href="#">上海</a></li>
+          <li><a href="#">上海</a></li>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+  <div class="beian gray">
+    <p>©2015 版权所有 到位 daoway.com 京ICP备15001471号-1</p>
+    <p>北京邻家科技有限公司 </p>
+  </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+  $(function () {
+    trunback()
+    function trunback() {
+      $(window).scroll(function (ev) {
+        if ($('body').scrollTop() > 70) {
+          $('.header_nav').addClass('show')
+        } else if ($('body').scrollTop() < 100) {
+          $('.header_nav').removeClass('show')
+        }
+      })
+    }
+  })
+</script>
 </body>
 </html>
